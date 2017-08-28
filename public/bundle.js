@@ -22276,7 +22276,19 @@
 	                image: "/public/images/tipi.png",
 	                son: "/public/son/tipi.wav",
 	                description: "Un léger problème avec les flics, controleurs ou agents de sécurité..",
-	                imageG: "/public/images/tipi.jpg" }];
+	                imageG: "/public/images/tipi.jpg" }, { id: 5, nom: "Six", prenom: "Marin", surnom: "Bamboula",
+	                image: "/public/images/boula.png",
+	                son: "/public/son/boula.wav",
+	                description: "Ce diable de Boula !",
+	                imageG: "/public/images/boula.jpg" }, { id: 6, nom: "Bencheikh", prenom: "Benjamin", surnom: "Malouda",
+	                image: "/public/images/malouda.png",
+	                son: "/public/son/boula.wav",
+	                description: "Pour refaire votre intérieur n'hésitez pas, contacter Maloudamidot !",
+	                imageG: "/public/images/malouda.jpg" }, { id: 7, nom: "Degrotte", prenom: "Vivien", surnom: "Pumba",
+	                image: "/public/images/pumba.png",
+	                son: "/public/son/pumba.wav",
+	                description: "C'est PUMMMMMBAAAAA !",
+	                imageG: "/public/images/pumba.jpg" }];
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
