@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './src/components/app';
+import App from './components/app';
 import { createStore } from 'redux'
-import modaleId from './src/reducers/reducer.js'
+import modaleId from './reducers/reducer.js'
 
 var store = createStore(modaleId)
 

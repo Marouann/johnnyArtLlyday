@@ -22257,8 +22257,8 @@
 	            var _this2 = this;
 
 	            var rugbeux = [{ id: 0, nom: "Rouveyrol", prenom: "Alexandre", surnom: "Elmer",
-	                image: "https://img11.hostingpics.net/thumbs/mini_726550elmer.png",
-	                son: "http://s1download-universal-soundbank.com/mp3/sounds/18531.mp3",
+	                image: "/static/images/elmer.jpg",
+	                son: "/static/son/elmer.wav",
 	                description: "Un éléphant tout bariolé de la tête au pied !",
 	                imageG: "http://www.hostingpics.net/thumbs/70/50/60/mini_705060elmerG.jpg" }, { id: 1, nom: "Janot", prenom: "Alexandre", surnom: "René",
 	                image: "http://www.hostingpics.net/thumbs/56/82/58/mini_568258Jano.png",

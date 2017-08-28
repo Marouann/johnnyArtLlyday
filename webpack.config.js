@@ -1,5 +1,7 @@
+var path = require('path');
+
 module.exports = {
-    entry: "./public/app.js",
+    entry: "./src/app.js",
     output: {
         path: __dirname + "/public",
         filename: "bundle.js"
@@ -7,18 +9,13 @@ module.exports = {
     module: {
         loaders: [
             {
-                exclude: /(node_modules)/,
                 loader: 'babel-loader',
+                include: [
+                    path.resolve(__dirname, 'src'),
+                ],
                 query: {
                     presets: ['es2015', 'react']
                 }
-            },
-            {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-                    'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
-                ]
             }
         ]
     },
