@@ -13,8 +13,6 @@ app.get('*', function (req, res) {
 
 var id = 1;
 
-var server = app.listen(3000);
+var server = app.listen(process.env.PORT || 3000);
 var io = require('socket.io')(server);
 var ent = require('ent');
-
-server.listen(3000);
