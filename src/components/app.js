@@ -18,7 +18,7 @@ class App extends React.Component{
                 imageG:"/public/images/elmer.jpg"},
             {id:1, nom: "Janot", prenom: "Alexandre", surnom:"René",
                 image:"/public/images/Jano.png",
-                son:"http://s1download-universal-soundbank.com/mp3/sounds/18531.mp3",
+                son:"/public/son/janot.wav",
                 description:"René la taupe, qui creuse dans le sol",
                 imageG:"/public/images/jannot.jpg"},
             {id:2, nom: "Lamblin", prenom: "Théo", surnom:"Yoshi",
