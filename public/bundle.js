@@ -22485,14 +22485,18 @@
 
 	            return _react2.default.createElement(
 	                "div",
-	                { className: "col-md-3 debile" },
+	                { className: "col-md-3 debile mx-auto" },
 	                _react2.default.createElement("audio", { id: "audio" + this.props.debile.id, preload: "auto", src: this.props.debile.son }),
 	                _react2.default.createElement(
-	                    "a",
-	                    { href: "#overlay" },
-	                    _react2.default.createElement("img", { id: "img" + this.props.debile.id, className: "img-responsive imgdeb", src: this.props.debile.image, onClick: function onClick() {
-	                            return _this2.clicImg(_this2.props.debile.id);
-	                        } })
+	                    "center",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#overlay" },
+	                        _react2.default.createElement("img", { id: "img" + this.props.debile.id, className: "img-responsive imgdeb imgdeb" + this.props.debile.id % 4, src: this.props.debile.image, onClick: function onClick() {
+	                                return _this2.clicImg(_this2.props.debile.id);
+	                            } })
+	                    )
 	                )
 	            );
 	        }
