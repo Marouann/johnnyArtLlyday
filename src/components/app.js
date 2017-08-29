@@ -91,6 +91,12 @@ class App extends React.Component{
                 son:"/public/son/cheval.wav",
                 description:"Youpiyaya Youpiyoupiya !",
                 imageG:"/public/images/cheval.jpg"},
+            {id:16, nom: "Naze", prenom: "Spordi", surnom:"Brique + Junior",
+                image:"/public/images/briquejunior.png",
+                son:"/public/son/briquejunior.wav",
+                description:"Inséparables !",
+                imageG:"/public/images/briquejunior.png"},
+            
             
             /*
              {id:14, nom: "Devidas", prenom: "Elsa", surnom:"Elsa",

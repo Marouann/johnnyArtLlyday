@@ -22322,7 +22322,11 @@
 	                image: "/public/images/cheval.png",
 	                son: "/public/son/cheval.wav",
 	                description: "Youpiyaya Youpiyoupiya !",
-	                imageG: "/public/images/cheval.jpg" }];
+	                imageG: "/public/images/cheval.jpg" }, { id: 16, nom: "Naze", prenom: "Spordi", surnom: "Brique + Junior",
+	                image: "/public/images/briquejunior.png",
+	                son: "/public/son/briquejunior.wav",
+	                description: "Inséparables !",
+	                imageG: "/public/images/briquejunior.png" }];
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
