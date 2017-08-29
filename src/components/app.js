@@ -81,6 +81,11 @@ class App extends React.Component{
                 son:"/public/son/tritus.wav",
                 description:"Ne cliquez pas trop sur les roux ça porte malheur",
                 imageG:"/public/images/tritus.jpg"},
+            {id:14, nom: "Menard", prenom: "Adrien", surnom:"Chataigne",
+                image:"/public/images/chataigne.png",
+                son:"/public/son/chataigne.wav",
+                description:"Vol petit ballon du TOSS !",
+                imageG:"/public/images/chataigne.jpg"},
             ];
         return(
             <div className="container">
