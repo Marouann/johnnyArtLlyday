@@ -22266,7 +22266,7 @@
 	                description: "René la taupe, qui creuse dans le sol",
 	                imageG: "/public/images/jannot.jpg" }, { id: 2, nom: "Lamblin", prenom: "Théo", surnom: "Yoshi",
 	                image: "/public/images/yoshi.png",
-	                son: "http://s1download-universal-soundbank.com/mp3/sounds/18531.mp3",
+	                son: "/public/son/yoshi.wav",
 	                description: "Qui a du caca caki collé au cul-cul ?",
 	                imageG: "/public/images/yoshi.jpg" }, { id: 3, nom: "Levy", prenom: "Simon", surnom: "Wilson",
 	                image: "/public/images/wiwi.png",
