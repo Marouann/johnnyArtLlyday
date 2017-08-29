@@ -81,7 +81,8 @@ body {
 }
 
 .imgdeb{
-  width:160px;
+  width:100%;
+  height:100%;
 }
 
 @keyframes swing {
@@ -142,4 +143,8 @@ body {
 
 .popup_block img{
   height:400px
+}
+
+.description img{
+  max-width:320px;
 }

@@ -22288,7 +22288,23 @@
 	                image: "/public/images/pumba.png",
 	                son: "/public/son/pumba.wav",
 	                description: "C'est PUMMMMMBAAAAA !",
-	                imageG: "/public/images/pumba.jpg" }];
+	                imageG: "/public/images/pumba.jpg" }, { id: 8, nom: "Buffet", prenom: "Auriane", surnom: "Rototo",
+	                image: "/public/images/rototo.png",
+	                son: "/public/son/rototo.wav",
+	                description: "ROTOTOOOOOOOOOOOOOOOO !",
+	                imageG: "/public/images/rototo.jpg" }, { id: 9, nom: "Sapiens", prenom: "Hétéros", surnom: "Sporsaires",
+	                image: "/public/images/sapiens.png",
+	                son: "/public/son/sapiens.wav",
+	                description: "GAROOOOOSPOOOORSAIIIIIAIIIIIAIIIRE !",
+	                imageG: "/public/images/sapiens.jpg" }, { id: 10, nom: "Vaillant", prenom: "Paul", surnom: "Vaillant",
+	                image: "/public/images/vaillant.png",
+	                son: "/public/son/vaillant.wav",
+	                description: "",
+	                imageG: "/public/images/vaillant.jpg" }, { id: 11, nom: "Khalil", prenom: "Sami", surnom: "Scoubi",
+	                image: "/public/images/scoubi.png",
+	                son: "/public/son/scoubi.wav",
+	                description: "Futur parain de promo !",
+	                imageG: "/public/images/scoubi.jpg" }];
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
@@ -22521,8 +22537,17 @@
 	    }
 
 	    _createClass(Modale, [{
+	        key: "stopSon",
+	        value: function stopSon(id) {
+	            var sound = document.getElementById("audio" + id);
+	            sound.pause();
+	            sound.currentTime = 0;
+	        }
+	    }, {
 	        key: "render",
 	        value: function render() {
+	            var _this2 = this;
+
 	            return _react2.default.createElement(
 	                "div",
 	                { id: "overlay" },
@@ -22531,7 +22556,9 @@
 	                    { className: "popup_block" },
 	                    _react2.default.createElement(
 	                        "a",
-	                        { className: "close", href: "#noWhere" },
+	                        { className: "close", href: "#noWhere", onClick: function onClick() {
+	                                return _this2.stopSon(_this2.props.modaleId);
+	                            } },
 	                        "X"
 	                    ),
 	                    _react2.default.createElement(
@@ -22549,7 +22576,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        "div",
-	                        { id: "description" },
+	                        { className: "description" },
 	                        _react2.default.createElement(
 	                            "h3",
 	                            null,
