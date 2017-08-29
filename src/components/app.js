@@ -31,11 +31,11 @@ class App extends React.Component{
                 son:"http://s1download-universal-soundbank.com/mp3/sounds/18531.mp3",
                 description:"Le charme de Wilson c'est de la poudre aux yeux",
                 imageG:"http://s1.e-monsite.com/2009/03/07/10/36152069215px-mariomp8a-png.png"},
-            {id:4, nom: "Buffet", prenom: "Auriane", surnom:"Rototo",
+            /*{id:4, nom: "Buffet", prenom: "Auriane", surnom:"Rototo",
                 image:"/public/images/rototo.png",
                 son:"/public/son/rototo.wav",
                 description:"ROTOTOOOOOOOOOOOOOOOO !",
-                imageG:"/public/images/rototo.jpg"},
+                imageG:"/public/images/rototo.jpg"},*/
             {id:5, nom: "Six", prenom: "Marin", surnom:"Bamboula",
                 image:"/public/images/boula.png",
                 son:"/public/son/boula.wav",
@@ -86,6 +86,34 @@ class App extends React.Component{
                 son:"/public/son/chataigne.wav",
                 description:"Vol petit ballon du TOSS !",
                 imageG:"/public/images/chataigne.jpg"},
+            {id:15, nom: "Guillormini", prenom: "Thomas", surnom:"Cheval",
+                image:"/public/images/cheval.png",
+                son:"/public/son/cheval.wav",
+                description:"Youpiyaya Youpiyoupiya !",
+                imageG:"/public/images/cheval.jpg"},
+            
+            /*
+             {id:14, nom: "Devidas", prenom: "Elsa", surnom:"Elsa",
+                image:"/public/images/elsa.png",
+                son:"/public/son/elsa.wav",
+                description:"Tu peux te casser le nez une fois mais pas deux..!",
+                imageG:"/public/images/elsa.jpg"},
+            {id:14, nom: "Antonsanti", prenom: "Pierre-Louis", surnom:"Zobzob",
+                image:"/public/images/zobzob.png",
+                son:"/public/son/zobzob.wav",
+                description:"Vol petit ballon du TOSS !",
+                imageG:"/public/images/zobzob.jpg"},
+            {id:14, nom: "Perrissin", prenom: "Mathilde", surnom:"Hector",
+                image:"/public/images/hector.png",
+                son:"/public/son/hector.wav",
+                description:"HECTOOOOOOOOOOOOOOOOOOOOR" !",
+                imageG:"/public/images/hector.jpg"},
+            {id:14, nom: "Menard", prenom: "Adrien", surnom:"Chataigne",
+                image:"/public/images/chataigne.png",
+                son:"/public/son/chataigne.wav",
+                description:"Vol petit ballon du TOSS !",
+                imageG:"/public/images/chataigne.jpg"},   
+            */
             ];
         return(
             <div className="container">

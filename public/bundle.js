@@ -22272,11 +22272,13 @@
 	                image: "/public/images/wiwi.png",
 	                son: "http://s1download-universal-soundbank.com/mp3/sounds/18531.mp3",
 	                description: "Le charme de Wilson c'est de la poudre aux yeux",
-	                imageG: "http://s1.e-monsite.com/2009/03/07/10/36152069215px-mariomp8a-png.png" }, { id: 4, nom: "Buffet", prenom: "Auriane", surnom: "Rototo",
-	                image: "/public/images/rototo.png",
-	                son: "/public/son/rototo.wav",
-	                description: "ROTOTOOOOOOOOOOOOOOOO !",
-	                imageG: "/public/images/rototo.jpg" }, { id: 5, nom: "Six", prenom: "Marin", surnom: "Bamboula",
+	                imageG: "http://s1.e-monsite.com/2009/03/07/10/36152069215px-mariomp8a-png.png" },
+	            /*{id:4, nom: "Buffet", prenom: "Auriane", surnom:"Rototo",
+	                image:"/public/images/rototo.png",
+	                son:"/public/son/rototo.wav",
+	                description:"ROTOTOOOOOOOOOOOOOOOO !",
+	                imageG:"/public/images/rototo.jpg"},*/
+	            { id: 5, nom: "Six", prenom: "Marin", surnom: "Bamboula",
 	                image: "/public/images/boula.png",
 	                son: "/public/son/boula.wav",
 	                description: "Ce diable de Boula !",
@@ -22316,7 +22318,11 @@
 	                image: "/public/images/chataigne.png",
 	                son: "/public/son/chataigne.wav",
 	                description: "Vol petit ballon du TOSS !",
-	                imageG: "/public/images/chataigne.jpg" }];
+	                imageG: "/public/images/chataigne.jpg" }, { id: 15, nom: "Guillormini", prenom: "Thomas", surnom: "Cheval",
+	                image: "/public/images/cheval.png",
+	                son: "/public/son/cheval.wav",
+	                description: "Youpiyaya Youpiyoupiya !",
+	                imageG: "/public/images/cheval.jpg" }];
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
@@ -22439,7 +22445,7 @@
 	                "div",
 	                { id: "listDebile", className: "row" },
 	                this.props.rugbeux.map(function (debile) {
-	                    return _react2.default.createElement(_debile2.default, { debile: debile, f: _this2.props.f });
+	                    return _react2.default.createElement(_debile2.default, { key: debile.id, debile: debile, f: _this2.props.f });
 	                })
 	            );
 	        }
@@ -22564,6 +22570,19 @@
 	        value: function render() {
 	            var _this2 = this;
 
+	            function trouveRang(tab, id) {
+	                var bool = true;
+	                var k = 0;
+	                while (bool && k < tab.length) {
+	                    if (tab[k].id == id) {
+	                        bool = false;
+	                    } else {
+	                        k += 1;
+	                    }
+	                }
+	                return k;
+	            }
+
 	            return _react2.default.createElement(
 	                "div",
 	                { id: "overlay" },
@@ -22580,15 +22599,15 @@
 	                    _react2.default.createElement(
 	                        "h4",
 	                        null,
-	                        this.props.rugbeux[this.props.modaleId].prenom,
+	                        this.props.rugbeux[trouveRang(this.props.rugbeux, this.props.modaleId)].prenom,
 	                        " ",
-	                        this.props.rugbeux[this.props.modaleId].nom,
+	                        this.props.rugbeux[trouveRang(this.props.rugbeux, this.props.modaleId)].nom,
 	                        ", surnomm\xE9 :"
 	                    ),
 	                    _react2.default.createElement(
 	                        "h1",
 	                        null,
-	                        this.props.rugbeux[this.props.modaleId].surnom
+	                        this.props.rugbeux[trouveRang(this.props.rugbeux, this.props.modaleId)].surnom
 	                    ),
 	                    _react2.default.createElement(
 	                        "div",
@@ -22602,13 +22621,13 @@
 	                            "p",
 	                            null,
 	                            " ",
-	                            this.props.rugbeux[this.props.modaleId].description,
+	                            this.props.rugbeux[trouveRang(this.props.rugbeux, this.props.modaleId)].description,
 	                            " "
 	                        ),
 	                        _react2.default.createElement(
 	                            "center",
 	                            null,
-	                            _react2.default.createElement("img", { src: this.props.rugbeux[this.props.modaleId].imageG })
+	                            _react2.default.createElement("img", { src: this.props.rugbeux[trouveRang(this.props.rugbeux, this.props.modaleId)].imageG })
 	                        )
 	                    )
 	                )
