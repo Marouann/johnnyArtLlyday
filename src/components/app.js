@@ -71,6 +71,16 @@ class App extends React.Component{
                 son:"/public/son/scoubi.wav",
                 description:"Futur parain de promo !",
                 imageG:"/public/images/scoubi.jpg"},
+            {id:12, nom: "Metge", prenom: "Robin", surnom:"Moignon",
+                image:"/public/images/moignon.png",
+                son:"/public/son/moignon.wav",
+                description:"La moigne !",
+                imageG:"/public/images/moignon.jpg"},
+            {id:13, nom: "Danglade", prenom: "BenoIt", surnom:"Tritus",
+                image:"/public/images/tritus.png",
+                son:"/public/son/tritus.wav",
+                description:"Ne cliquez pas trop sur les roux ça porte malheur",
+                imageG:"/public/images/tritus.jpg"},
             ];
         return(
             <div className="container">

@@ -22304,7 +22304,15 @@
 	                image: "/public/images/scoubi.png",
 	                son: "/public/son/scoubi.wav",
 	                description: "Futur parain de promo !",
-	                imageG: "/public/images/scoubi.jpg" }];
+	                imageG: "/public/images/scoubi.jpg" }, { id: 12, nom: "Metge", prenom: "Robin", surnom: "Moignon",
+	                image: "/public/images/moignon.png",
+	                son: "/public/son/moignon.wav",
+	                description: "La moigne !",
+	                imageG: "/public/images/moignon.jpg" }, { id: 13, nom: "Danglade", prenom: "BenoIt", surnom: "Tritus",
+	                image: "/public/images/tritus.png",
+	                son: "/public/son/tritus.wav",
+	                description: "Ne cliquez pas trop sur les roux ça porte malheur",
+	                imageG: "/public/images/tritus.jpg" }];
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
@@ -22368,7 +22376,7 @@
 	          _react2.default.createElement(
 	            "h1",
 	            null,
-	            " ARCCN BOARD "
+	            " LA BOITE \xC0 D\xC9BILES "
 	          ),
 	          _react2.default.createElement("div", { className: "bandeblanche" })
 	        )
