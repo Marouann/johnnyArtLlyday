@@ -265,3 +265,30 @@ body {
     transform: none;
   }
 }
+
+@keyframes rotateIn {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#imgMystere:hover{
+  -webkit-animation: rotating 1s linear infinite;
+}
