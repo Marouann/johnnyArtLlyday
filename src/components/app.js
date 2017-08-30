@@ -110,30 +110,27 @@ class App extends React.Component{
                 image:"/public/images/zobzob.png",
                 son:"/public/son/zobzob.wav",
                 description:"I'm the batman",
-                imageG:"/public/images/zobzob.jpg"},
-            
-            
-            /*
+                imageG:"/public/images/zobzob.jpg"},/*
+            {id:21, nom: "Eichenne", prenom: "Alexandre", surnom:"Concon",
+                image:"/public/images/concon.png",
+                son:"/public/son/concon.wav",
+                description:"",
+                imageG:"/public/images/concon.jpg"},
+            {id:22, nom: "de Jeu", prenom: "Faute", surnom:"FauteDeJeu",
+                image:"/public/images/fdj.png",
+                son:"/public/son/fdj.wav",
+                description:"https://docs.google.com/spreadsheets/d/1-HbAjNBep07aas-NH7FdsuaTgKqkXDFzr-A7FMz8jkI/edit",
+                imageG:"/public/images/fdj.jpg"},
              {id:14, nom: "Devidas", prenom: "Elsa", surnom:"Elsa",
                 image:"/public/images/elsa.png",
                 son:"/public/son/elsa.wav",
                 description:"Tu peux te casser le nez une fois mais pas deux..!",
                 imageG:"/public/images/elsa.jpg"},
-            {id:14, nom: "Antonsanti", prenom: "Pierre-Louis", surnom:"Zobzob",
-                image:"/public/images/zobzob.png",
-                son:"/public/son/zobzob.wav",
-                description:"Vol petit ballon du TOSS !",
-                imageG:"/public/images/zobzob.jpg"},
             {id:14, nom: "Perrissin", prenom: "Mathilde", surnom:"Hector",
                 image:"/public/images/hector.png",
                 son:"/public/son/hector.wav",
                 description:"HECTOOOOOOOOOOOOOOOOOOOOR" !",
-                imageG:"/public/images/hector.jpg"},
-            {id:14, nom: "Menard", prenom: "Adrien", surnom:"Chataigne",
-                image:"/public/images/chataigne.png",
-                son:"/public/son/chataigne.wav",
-                description:"Vol petit ballon du TOSS !",
-                imageG:"/public/images/chataigne.jpg"},   
+                imageG:"/public/images/hector.jpg"}, 
             */
             ];
         return(
