@@ -121,11 +121,16 @@ class App extends React.Component{
                 son:"/public/son/fdj.wav",
                 description:"https://docs.google.com/spreadsheets/d/1-HbAjNBep07aas-NH7FdsuaTgKqkXDFzr-A7FMz8jkI/edit",
                 imageG:"/public/images/fdj.jpg"},
-                {id:23, nom: "Seban", prenom: "Thomas", surnom:"MST",
+            {id:23, nom: "Seban", prenom: "Thomas", surnom:"MST",
                 image:"/public/images/mst.png",
                 son:"/public/son/mst.wav",
                 description:"Sacré facteur !",
-                imageG:"/public/images/mst.jpg"},/*
+                imageG:"/public/images/mst.jpg"},
+            {id:24, nom: "Sonalier", prenom: "Nathan", surnom:"Seum",
+                image:"/public/images/seum.png",
+                son:"/public/son/seum.wav",
+                description:"Sacré Magic Nathan !",
+                imageG:"/public/images/seum.jpg"},/*
              {id:14, nom: "Devidas", prenom: "Elsa", surnom:"Elsa",
                 image:"/public/images/elsa.png",
                 son:"/public/son/elsa.wav",

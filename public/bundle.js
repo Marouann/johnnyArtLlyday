@@ -22350,7 +22350,11 @@
 	                image: "/public/images/mst.png",
 	                son: "/public/son/mst.wav",
 	                description: "Sacré facteur !",
-	                imageG: "/public/images/mst.jpg" }];
+	                imageG: "/public/images/mst.jpg" }, { id: 24, nom: "Sonalier", prenom: "Nathan", surnom: "Seum",
+	                image: "/public/images/seum.png",
+	                son: "/public/son/seum.wav",
+	                description: "Sacré Magic Nathan !",
+	                imageG: "/public/images/seum.jpg" }];
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
