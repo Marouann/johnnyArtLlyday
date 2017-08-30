@@ -22338,7 +22338,19 @@
 	                image: "/public/images/zobzob.png",
 	                son: "/public/son/zobzob.wav",
 	                description: "I'm the batman",
-	                imageG: "/public/images/zobzob.jpg" }];
+	                imageG: "/public/images/zobzob.jpg" }, { id: 21, nom: "Eichenne", prenom: "Alexandre", surnom: "Concon",
+	                image: "/public/images/concon.png",
+	                son: "/public/son/concon.wav",
+	                description: "Et surtout...",
+	                imageG: "/public/images/concon.jpg" }, { id: 22, nom: "de Jeu", prenom: "Faute", surnom: "FauteDeJeu",
+	                image: "/public/images/fdj.png",
+	                son: "/public/son/fdj.wav",
+	                description: "https://docs.google.com/spreadsheets/d/1-HbAjNBep07aas-NH7FdsuaTgKqkXDFzr-A7FMz8jkI/edit",
+	                imageG: "/public/images/fdj.jpg" }, { id: 23, nom: "Seban", prenom: "Thomas", surnom: "MST",
+	                image: "/public/images/mst.png",
+	                son: "/public/son/mst.wav",
+	                description: "Sacré facteur !",
+	                imageG: "/public/images/mst.jpg" }];
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
