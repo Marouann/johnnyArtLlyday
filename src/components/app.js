@@ -140,7 +140,12 @@ class App extends React.Component{
                 image:"/public/images/pleurotte.png",
                 son:"/public/son/pleurotte.wav",
                 description:"Le requin bite !!",
-                imageG:"/public/images/pleurotte.jpg"},/*
+                imageG:"/public/images/pleurotte.jpg"},
+            {id:27, nom: "Legendre", prenom: "Vincent", surnom:"Mycose",
+                image:"/public/images/mycose.png",
+                son:"/public/son/mycose.wav",
+                description:"Pas de commentaire sur l'audio..",
+                imageG:"/public/images/mycose.jpg"},/*
              {id:14, nom: "Devidas", prenom: "Elsa", surnom:"Elsa",
                 image:"/public/images/elsa.png",
                 son:"/public/son/elsa.wav",
