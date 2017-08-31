@@ -131,7 +131,7 @@ class App extends React.Component{
                 son:"/public/son/seum.wav",
                 description:"Sacré Magic Nathan !",
                 imageG:"/public/images/seum.jpg"},
-            {id:25, nom: "Ludovic", prenom: "Geoffroy", surnom:"Fanfan",
+            {id:25, nom: "Geoffroy", prenom: "Ludovic", surnom:"Fanfan",
                 image:"/public/images/fanfan.png",
                 son:"/public/son/fanfan.wav",
                 description:"Oui c'est moi Fanfan !",
@@ -145,7 +145,12 @@ class App extends React.Component{
                 image:"/public/images/mycose.png",
                 son:"/public/son/mycose.wav",
                 description:"Pas de commentaire sur l'audio..",
-                imageG:"/public/images/mycose.jpg"},/*
+                imageG:"/public/images/mycose.jpg"},
+            {id:28, nom: "Cheikh", prenom: "Marouann", surnom:"Marouann",
+                image:"/public/images/marouann.png",
+                son:"/public/son/marouann.wav",
+                description:"Mais, mais mais...!",
+                imageG:"/public/images/marouann.jpg"},/*
              {id:14, nom: "Devidas", prenom: "Elsa", surnom:"Elsa",
                 image:"/public/images/elsa.png",
                 son:"/public/son/elsa.wav",
@@ -155,7 +160,7 @@ class App extends React.Component{
                 image:"/public/images/hector.png",
                 son:"/public/son/hector.wav",
                 description:"HECTOOOOOOOOOOOOOOOOOOOOR" !",
-                imageG:"/public/images/hector.jpg"}, 
+                imageG:"/public/images/hector.jpg"},
             */
             {id:50, nom: "de Centrale", prenom: "Le Duc", surnom:"Poitou",
                 image:"/public/images/poitou.png",
