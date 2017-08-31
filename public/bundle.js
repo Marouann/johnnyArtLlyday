@@ -22269,10 +22269,10 @@
 	                son: "/public/son/yoshi.wav",
 	                description: "Qui a du caca caki collé au cul-cul ?",
 	                imageG: "/public/images/yoshi.jpg" }, { id: 3, nom: "Levy", prenom: "Simon", surnom: "Wilson",
-	                image: "/public/images/wiwi.png",
+	                image: "/public/images/wilson.png",
 	                son: "/public/son/wilson.wav",
 	                description: "Le charme de Wilson c'est de la poudre aux yeux",
-	                imageG: "http://s1.e-monsite.com/2009/03/07/10/36152069215px-mariomp8a-png.png" },
+	                imageG: "/public/images/wilson.jpg" },
 	            /*{id:4, nom: "Buffet", prenom: "Auriane", surnom:"Rototo",
 	                image:"/public/images/rototo.png",
 	                son:"/public/son/rototo.wav",
@@ -22354,7 +22354,11 @@
 	                image: "/public/images/seum.png",
 	                son: "/public/son/seum.wav",
 	                description: "Sacré Magic Nathan !",
-	                imageG: "/public/images/seum.jpg" }];
+	                imageG: "/public/images/seum.jpg" }, { id: 25, nom: "Ludovic", prenom: "Geoffroy", surnom: "Fanfan",
+	                image: "/public/images/fanfan.png",
+	                son: "/public/son/fanfan.wav",
+	                description: "Oui c'est moi Fanfan !",
+	                imageG: "/public/images/fanfan.jpg" }];
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
