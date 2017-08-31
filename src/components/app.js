@@ -147,6 +147,11 @@ class App extends React.Component{
                 description:"HECTOOOOOOOOOOOOOOOOOOOOR" !",
                 imageG:"/public/images/hector.jpg"}, 
             */
+            {id:50, nom: "de Centrale", prenom: "Le Duc", surnom:"Poitou",
+                image:"/public/images/poitou.png",
+                son:"/public/son/poitou.wav",
+                description:"T'inquiètes frérot, on va continuer à niquer les lyonnais !",
+                imageG:"/public/images/poitou.jpg"},
             ];
         return(
             <div className="container">

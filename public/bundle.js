@@ -22358,7 +22358,23 @@
 	                image: "/public/images/fanfan.png",
 	                son: "/public/son/fanfan.wav",
 	                description: "Oui c'est moi Fanfan !",
-	                imageG: "/public/images/fanfan.jpg" }];
+	                imageG: "/public/images/fanfan.jpg" }, /*
+	                                                       {id:14, nom: "Devidas", prenom: "Elsa", surnom:"Elsa",
+	                                                       image:"/public/images/elsa.png",
+	                                                       son:"/public/son/elsa.wav",
+	                                                       description:"Tu peux te casser le nez une fois mais pas deux..!",
+	                                                       imageG:"/public/images/elsa.jpg"},
+	                                                       {id:14, nom: "Perrissin", prenom: "Mathilde", surnom:"Hector",
+	                                                       image:"/public/images/hector.png",
+	                                                       son:"/public/son/hector.wav",
+	                                                       description:"HECTOOOOOOOOOOOOOOOOOOOOR" !",
+	                                                       imageG:"/public/images/hector.jpg"}, 
+	                                                       */
+	            { id: 50, nom: "de Centrale", prenom: "Le Duc", surnom: "Poitou",
+	                image: "/public/images/poitou.png",
+	                son: "/public/son/poitou.wav",
+	                description: "T'inquiètes frérot, on va continuer à niquer les lyonnais !",
+	                imageG: "/public/images/poitou.jpg" }];
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
