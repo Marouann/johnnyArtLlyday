@@ -135,7 +135,12 @@ class App extends React.Component{
                 image:"/public/images/fanfan.png",
                 son:"/public/son/fanfan.wav",
                 description:"Oui c'est moi Fanfan !",
-                imageG:"/public/images/fanfan.jpg"},/*
+                imageG:"/public/images/fanfan.jpg"},
+            {id:26, nom: "Lacoma", prenom: "Vincent", surnom:"Pleurotte",
+                image:"/public/images/pleurotte.png",
+                son:"/public/son/pleurotte.wav",
+                description:"Le requin bite !!",
+                imageG:"/public/images/pleurotte.jpg"},/*
              {id:14, nom: "Devidas", prenom: "Elsa", surnom:"Elsa",
                 image:"/public/images/elsa.png",
                 son:"/public/son/elsa.wav",
