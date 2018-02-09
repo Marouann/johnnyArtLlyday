@@ -107,6 +107,7 @@ class App extends React.Component{
                 <p>Si vous chiez, vous enterrez un peu plus Johnny... <img className="tomb" src="public/images/tomb.png"/></p>
                 <div className="bdx">
                     <div className="bandeblanche little" />
+                    <h2>BDA</h2>
                     <div className="row">
                         {bda.map(({ src, good, bad }, index) => (
                             <div className="col-md-3 debile mx-auto">

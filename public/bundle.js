@@ -22354,6 +22354,11 @@
 	                    { className: 'bdx' },
 	                    _react2.default.createElement('div', { className: 'bandeblanche little' }),
 	                    _react2.default.createElement(
+	                        'h2',
+	                        null,
+	                        'BDA'
+	                    ),
+	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'row' },
 	                        bda.map(function (_ref, index) {
