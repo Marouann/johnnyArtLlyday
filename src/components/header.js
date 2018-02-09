@@ -5,9 +5,8 @@ class Header extends React.Component {
     return (
       <div className="row">
         <div id="header" className="col-md-12 text-center">
-          <div className="bandeblanche"></div>
-          <h1> LA BOITE À DÉBILES </h1>
-          <div className="bandeblanche"></div>
+          <div className="bandeblanche" />
+          <img className="logo" src="/public/images/logo.png" />
         </div>
       </div>
     );

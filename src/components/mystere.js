@@ -1,11 +1,11 @@
 import React from 'react'
 
-class Mystere extends React.Component{
-    constructor(props){
+class Mystere extends React.Component {
+    constructor(props) {
         super(props);
     }
 
-    clicImg(){
+    clicImg() {
         var min = Math.ceil(0);
         var max = Math.floor(this.props.rugbeux.length);
         var rand = Math.floor(Math.random() * (max - min +1)) + min;
@@ -15,11 +15,11 @@ class Mystere extends React.Component{
         this.props.f(id);
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div className="col-md-3 debile mx-auto">
                 <center>
-                <a href="#overlay"><img id={"imgMystere"} className={"img-responsive imgdeb imgMy"} src="/public/images/random.png" onClick={() => this.clicImg()} /></a>
+                    <a href="#overlay"><img id={"imgMystere"} className={"img-responsive imgdeb imgMy"} src="/public/images/random.png" onClick={() => this.clicImg()} /></a>
                 </center>
             </div>
         );

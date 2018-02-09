@@ -2,7 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #3498DB;
+  background-color: #1B2631;
+}
+
+p {
+  color: #F4F6F6;
+  font-family: Brush Script MT;
+  font-size: 40px;
+  text-align: center;
 }
 
 .game {
@@ -36,23 +43,91 @@ body {
 
 .bandeblanche{
   height:4px;
-  background-color: white;
+  background-color: #F4F6F6;
 }
 
-#header h1{
-  font-family: Impact;
+.bandeblanche.little {
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+.bdx .bandeblanche.little {
+  margin-top: 30px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: Brush Script MT;
   padding-bottom: 10px;
   padding-top: 10px;
-  color : white;
+  color : #F4F6F6;
   font-size : 80px;
   letter-spacing: 1.5px;
 }
 
-#header{
+i.fa {
+  color: red;
+  font-size: 1.4em;
+  margin-left: 12px;
+}
+
+img.tomb {
+  height: 1.4em;
+  margin-right: 12px;
+}
+
+.score {
+  margin-top: 20px;
+  border-style: solid;
+  border-color: #F4F6F6;
+  border-width: 2px;
+  border-radius: 60px;
+  padding: 8px;
+}
+
+.good,
+.bad {
+  font-size: 1.4em;
+  font-family: Calibri;
+}
+
+.good {
+  color: red;
+}
+
+.bad {
+  color: #b0b0b0;
+}
+
+.separator {
+  margin: 0 8px;
+}
+
+h2 {
+  font-size : 60px;
+}
+.bdx h2 {
+  margin: 40px;
+}
+#header {
   margin-top: 10px;
   margin-bottom : 50px;
 }
 
+img.logo {
+  width: 800px;
+}
+
+img.logo-bdx {
+  width: 100%;
+  border-radius: 30px;
+  height: 250px;
+}
+
+#listDebile {
+  margin-top: -120px;
+}
 
 .debile{
   margin-bottom:30px
@@ -155,7 +230,8 @@ body {
     border-radius: 10px;
 }
 
-.popup_block h1{
+.popup_block h1 {
+  color: black;
   text-align :center;
 }
 

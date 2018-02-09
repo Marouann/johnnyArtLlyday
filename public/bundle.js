@@ -58,9 +58,9 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _redux = __webpack_require__(190);
+	var _redux = __webpack_require__(191);
 
-	var _reducer = __webpack_require__(211);
+	var _reducer = __webpack_require__(212);
 
 	var _reducer2 = _interopRequireDefault(_reducer);
 
@@ -22229,6 +22229,10 @@
 
 	var _modale2 = _interopRequireDefault(_modale);
 
+	var _Score = __webpack_require__(190);
+
+	var _Score2 = _interopRequireDefault(_Score);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22247,154 +22251,187 @@
 	    }
 
 	    _createClass(App, [{
-	        key: 'modifModal',
-	        value: function modifModal(id) {
-	            this.props.store.dispatch({ type: 'lireModal', modalId: id });
-	        }
-	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var _this2 = this;
-
-	            var rugbeux = [{ id: 0, nom: "Rouveyrol", prenom: "Alexandre", surnom: "Elmer",
-	                image: "/public/images/elmer.png",
-	                son: "/public/son/elmer.mp3",
+	            var rugbeux = [{
+	                id: 0, nom: "Rouveyrol", prenom: "Alexandre", surnom: "Elmer",
+	                image: "/public/images/johnny1.png",
+	                son: "/public/son/boula.wav",
 	                description: "Un éléphant tout bariolé de la tête au pied !",
-	                imageG: "/public/images/elmer.jpg" }, { id: 1, nom: "Janot", prenom: "Alexandre", surnom: "René",
-	                image: "/public/images/Jano.png",
-	                son: "/public/son/janot.wav",
+	                imageG: "/public/images/johnny1.png"
+	            }, {
+	                id: 1, nom: "Janot", prenom: "Alexandre", surnom: "René",
+	                image: "/public/images/johnny2.png",
+	                son: "/public/son/boula.wav",
 	                description: "René la taupe, qui creuse dans le sol",
-	                imageG: "/public/images/jannot.jpg" }, { id: 2, nom: "Lamblin", prenom: "Théo", surnom: "Yoshi",
-	                image: "/public/images/yoshi.png",
-	                son: "/public/son/yoshi.wav",
+	                imageG: "/public/images/johnny2.png"
+	            }, {
+	                id: 2, nom: "Lamblin", prenom: "Théo", surnom: "Yoshi",
+	                image: "/public/images/johnny3.png",
+	                son: "/public/son/boula.wav",
 	                description: "Qui a du caca caki collé au cul-cul ?",
-	                imageG: "/public/images/yoshi.jpg" }, { id: 3, nom: "Levy", prenom: "Simon", surnom: "Wilson",
-	                image: "/public/images/wilson.png",
-	                son: "/public/son/wilson.wav",
+	                imageG: "/public/images/johnny3.png"
+	            }, {
+	                id: 3, nom: "Levy", prenom: "Simon", surnom: "Wilson",
+	                image: "/public/images/johnny4.png",
+	                son: "/public/son/boula.wav",
 	                description: "Le charme de Wilson c'est de la poudre aux yeux",
-	                imageG: "/public/images/wilson.jpg" },
-	            /*{id:4, nom: "Buffet", prenom: "Auriane", surnom:"Rototo",
-	                image:"/public/images/rototo.png",
-	                son:"/public/son/rototo.wav",
-	                description:"ROTOTOOOOOOOOOOOOOOOO !",
-	                imageG:"/public/images/rototo.jpg"},*/
-	            { id: 5, nom: "Six", prenom: "Marin", surnom: "Bamboula",
-	                image: "/public/images/boula.png",
-	                son: "/public/son/boula.wav",
-	                description: "Ce diable de Boula !",
-	                imageG: "/public/images/boula.jpg" }, { id: 6, nom: "Bencheikh", prenom: "Benjamin", surnom: "Malouda",
-	                image: "/public/images/malouda.png",
-	                son: "/public/son/boula.wav",
-	                description: "Pour refaire votre intérieur n'hésitez pas, contacter Maloudamidot !",
-	                imageG: "/public/images/malouda.jpg" }, { id: 7, nom: "Degrotte", prenom: "Vivien", surnom: "Pumba",
-	                image: "/public/images/pumba.png",
-	                son: "/public/son/pumba.wav",
-	                description: "C'est PUMMMMMBAAAAA !",
-	                imageG: "/public/images/pumba.jpg" }, { id: 8, nom: "Clédon", prenom: "Charlie", surnom: "Tipi",
-	                image: "/public/images/tipi.png",
-	                son: "/public/son/tipi.wav",
-	                description: "Un léger problème avec les flics, controleurs ou agents de sécurité..",
-	                imageG: "/public/images/tipi.jpg" }, { id: 9, nom: "Sapiens", prenom: "Hétéros", surnom: "Sporsaires",
-	                image: "/public/images/sapiens.png",
-	                son: "/public/son/sapiens.wav",
-	                description: "GAROOOOOSPOOOORSAIIIIIAIIIIIAIIIRE !",
-	                imageG: "/public/images/sapiens.jpg" }, { id: 10, nom: "Vaillant", prenom: "Paul", surnom: "Vaillant",
-	                image: "/public/images/vaillant.png",
-	                son: "/public/son/vaillant.wav",
-	                description: "",
-	                imageG: "/public/images/vaillant.jpg" }, { id: 11, nom: "Khalil", prenom: "Sami", surnom: "Scoubi",
-	                image: "/public/images/scoubi.png",
-	                son: "/public/son/scoubi.wav",
-	                description: "Futur parain de promo !",
-	                imageG: "/public/images/scoubi.jpg" }, { id: 12, nom: "Metge", prenom: "Robin", surnom: "Moignon",
-	                image: "/public/images/moignon.png",
-	                son: "/public/son/moignon.wav",
-	                description: "La moigne !",
-	                imageG: "/public/images/moignon.jpg" }, { id: 13, nom: "Danglade", prenom: "BenoIt", surnom: "Tritus",
-	                image: "/public/images/tritus.png",
-	                son: "/public/son/tritus.wav",
-	                description: "Ne cliquez pas trop sur les roux ça porte malheur",
-	                imageG: "/public/images/tritus.jpg" }, { id: 14, nom: "Menard", prenom: "Adrien", surnom: "Chataigne",
-	                image: "/public/images/chataigne.png",
-	                son: "/public/son/chataigne.wav",
-	                description: "Vol petit ballon du TOSS !",
-	                imageG: "/public/images/chataigne.jpg" }, { id: 15, nom: "Guillormini", prenom: "Thomas", surnom: "Cheval",
-	                image: "/public/images/cheval.png",
-	                son: "/public/son/cheval.wav",
-	                description: "Youpiyaya Youpiyoupiya !",
-	                imageG: "/public/images/cheval.jpg" }, { id: 16, nom: "Naze", prenom: "Spordi", surnom: "Brique + Junior",
-	                image: "/public/images/briquejunior.png",
-	                son: "/public/son/briquejunior.wav",
-	                description: "Inséparables !",
-	                imageG: "/public/images/briquejunior.png" }, { id: 17, nom: "Avidor", prenom: "Telem", surnom: "Tigrou",
-	                image: "/public/images/tigrou.png",
-	                son: "/public/son/tigrou.wav",
-	                description: "EMMMMEEEEENNNEZZZZ MOIIII !",
-	                imageG: "/public/images/tigrou.png" }, { id: 18, nom: "Iss", prenom: "Valérian", surnom: "Vaurien",
-	                image: "/public/images/vaurien.png",
-	                son: "/public/son/vaurien.wav",
-	                description: "Ecoeuré !",
-	                imageG: "/public/images/vaurien.png" }, { id: 20, nom: "Antonsanti", prenom: "Pierre-Louis", surnom: "Zobzob",
-	                image: "/public/images/zobzob.png",
-	                son: "/public/son/zobzob.wav",
-	                description: "I'm the batman",
-	                imageG: "/public/images/zobzob.jpg" }, { id: 21, nom: "Eichenne", prenom: "Alexandre", surnom: "Concon",
-	                image: "/public/images/concon.png",
-	                son: "/public/son/concon.wav",
-	                description: "Et surtout...",
-	                imageG: "/public/images/concon.jpg" }, { id: 22, nom: "de Jeu", prenom: "Faute", surnom: "FauteDeJeu",
-	                image: "/public/images/fdj.png",
-	                son: "/public/son/fdj.wav",
-	                description: "https://docs.google.com/spreadsheets/d/1-HbAjNBep07aas-NH7FdsuaTgKqkXDFzr-A7FMz8jkI/edit",
-	                imageG: "/public/images/fdj.jpg" }, { id: 23, nom: "Seban", prenom: "Thomas", surnom: "MST",
-	                image: "/public/images/mst.png",
-	                son: "/public/son/mst.wav",
-	                description: "Sacré facteur !",
-	                imageG: "/public/images/mst.jpg" }, { id: 24, nom: "Sonalier", prenom: "Nathan", surnom: "Seum",
-	                image: "/public/images/seum.png",
-	                son: "/public/son/seum.wav",
-	                description: "Sacré Magic Nathan !",
-	                imageG: "/public/images/seum.jpg" }, { id: 25, nom: "Geoffroy", prenom: "Ludovic", surnom: "Fanfan",
-	                image: "/public/images/fanfan.png",
-	                son: "/public/son/fanfan.wav",
-	                description: "Oui c'est moi Fanfan !",
-	                imageG: "/public/images/fanfan.jpg" }, { id: 26, nom: "Lacoma", prenom: "Vincent", surnom: "Pleurotte",
-	                image: "/public/images/pleurotte.png",
-	                son: "/public/son/pleurotte.wav",
-	                description: "Le requin bite !!",
-	                imageG: "/public/images/pleurotte.jpg" }, { id: 27, nom: "Legendre", prenom: "Vincent", surnom: "Mycose",
-	                image: "/public/images/mycose.png",
-	                son: "/public/son/mycose.wav",
-	                description: "Pas de commentaire sur l'audio..",
-	                imageG: "/public/images/mycose.jpg" }, { id: 28, nom: "Cheikh", prenom: "Marouann", surnom: "Marouann",
-	                image: "/public/images/marouann.png",
-	                son: "/public/son/marouann.wav",
-	                description: "Mais, mais mais...!",
-	                imageG: "/public/images/marouann.jpg" }, /*
-	                                                         {id:14, nom: "Devidas", prenom: "Elsa", surnom:"Elsa",
-	                                                         image:"/public/images/elsa.png",
-	                                                         son:"/public/son/elsa.wav",
-	                                                         description:"Tu peux te casser le nez une fois mais pas deux..!",
-	                                                         imageG:"/public/images/elsa.jpg"},
-	                                                         {id:14, nom: "Perrissin", prenom: "Mathilde", surnom:"Hector",
-	                                                         image:"/public/images/hector.png",
-	                                                         son:"/public/son/hector.wav",
-	                                                         description:"HECTOOOOOOOOOOOOOOOOOOOOR" !",
-	                                                         imageG:"/public/images/hector.jpg"},
-	                                                         */
-	            { id: 50, nom: "de Centrale", prenom: "Le Duc", surnom: "Poitou",
-	                image: "/public/images/poitou.png",
-	                son: "/public/son/poitou.wav",
-	                description: "T'inquiètes frérot, on va continuer à niquer les lyonnais !",
-	                imageG: "/public/images/poitou.jpg" }];
+	                imageG: "/public/images/johnny4.png"
+	            }];
+
+	            var bda = [{
+	                src: "public/images/spqart.png",
+	                good: 0,
+	                bad: 0
+	            }, {
+	                src: "public/images/moriarty.png",
+	                good: 0,
+	                bad: 0
+	            }, {
+	                src: "public/images/teambarton.png",
+	                good: 0,
+	                bad: 0
+	            }, {
+	                src: "public/images/gartdiens.png",
+	                good: 0,
+	                bad: 0
+	            }];
+
+	            var bde = [{
+	                src: "public/images/belzebruth.jpg",
+	                good: 0,
+	                bad: 0
+	            }, {
+	                src: "public/images/airfoxone.png",
+	                good: 10,
+	                bad: 0
+	            }];
+
+	            var bds = [{
+	                src: "public/images/asporcalypse.png",
+	                good: 10,
+	                bad: 0
+	            }, {
+	                src: "public/images/jacksporrow.png",
+	                good: 0,
+	                bad: 0
+	            }, {
+	                src: "public/images/perecaspor.png",
+	                good: 0,
+	                bad: 0
+	            }, {
+	                src: "public/images/sportroopers.svg",
+	                good: 10,
+	                bad: 0
+	            }];
+
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'container' },
 	                _react2.default.createElement(_header2.default, null),
-	                _react2.default.createElement(_modale2.default, { rugbeux: rugbeux, modaleId: this.props.store.getState() }),
-	                _react2.default.createElement(_rugbeux2.default, { rugbeux: rugbeux, f: function f(id) {
-	                        return _this2.modifModal(id);
-	                    } })
+	                _react2.default.createElement(_rugbeux2.default, { rugbeux: rugbeux }),
+	                _react2.default.createElement('div', { className: 'bandeblanche' }),
+	                _react2.default.createElement(
+	                    'h1',
+	                    null,
+	                    'Classement des plus formidables'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Si vous r\xE9galez, vous gagnez des points ',
+	                    _react2.default.createElement('i', { className: 'fa fa-fire' }),
+	                    ' !'
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Si vous chiez, vous enterrez un peu plus Johnny... ',
+	                    _react2.default.createElement('img', { className: 'tomb', src: 'public/images/tomb.png' })
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'bdx' },
+	                    _react2.default.createElement('div', { className: 'bandeblanche little' }),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        bda.map(function (_ref, index) {
+	                            var src = _ref.src,
+	                                good = _ref.good,
+	                                bad = _ref.bad;
+	                            return _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-3 debile mx-auto' },
+	                                console.log(index),
+	                                _react2.default.createElement(
+	                                    'center',
+	                                    null,
+	                                    _react2.default.createElement('img', { className: "logo-bdx imgdeb" + index, src: src }),
+	                                    _react2.default.createElement(_Score2.default, { good: good, bad: bad })
+	                                )
+	                            );
+	                        })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'bdx' },
+	                    _react2.default.createElement('div', { className: 'bandeblanche little' }),
+	                    _react2.default.createElement(
+	                        'h2',
+	                        null,
+	                        'BDE'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        bde.map(function (_ref2, index) {
+	                            var src = _ref2.src,
+	                                good = _ref2.good,
+	                                bad = _ref2.bad;
+	                            return _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-3 debile mx-auto' },
+	                                _react2.default.createElement(
+	                                    'center',
+	                                    null,
+	                                    _react2.default.createElement('img', { className: "logo-bdx imgdeb" + index, src: src }),
+	                                    _react2.default.createElement(_Score2.default, { good: good, bad: bad })
+	                                )
+	                            );
+	                        })
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'bdx' },
+	                    _react2.default.createElement('div', { className: 'bandeblanche little' }),
+	                    _react2.default.createElement(
+	                        'h2',
+	                        null,
+	                        'BDS'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'row' },
+	                        bds.map(function (_ref3, index) {
+	                            var src = _ref3.src,
+	                                good = _ref3.good,
+	                                bad = _ref3.bad;
+	                            return _react2.default.createElement(
+	                                'div',
+	                                { className: 'col-md-3 debile mx-auto' },
+	                                _react2.default.createElement(
+	                                    'center',
+	                                    null,
+	                                    _react2.default.createElement('img', { className: "logo-bdx imgdeb" + index, src: src }),
+	                                    _react2.default.createElement(_Score2.default, { good: good, bad: bad })
+	                                )
+	                            );
+	                        })
+	                    )
+	                )
 	            );
 	        }
 	    }]);
@@ -22447,12 +22484,7 @@
 	          "div",
 	          { id: "header", className: "col-md-12 text-center" },
 	          _react2.default.createElement("div", { className: "bandeblanche" }),
-	          _react2.default.createElement(
-	            "h1",
-	            null,
-	            " LA BOITE \xC0 D\xC9BILES "
-	          ),
-	          _react2.default.createElement("div", { className: "bandeblanche" })
+	          _react2.default.createElement("img", { className: "logo", src: "/public/images/logo.png" })
 	        )
 	      );
 	    }
@@ -22512,7 +22544,6 @@
 	            return _react2.default.createElement(
 	                "div",
 	                { id: "listDebile", className: "row" },
-	                _react2.default.createElement(_mystere2.default, { rugbeux: this.props.rugbeux, f: this.props.f }),
 	                this.props.rugbeux.map(function (debile) {
 	                    return _react2.default.createElement(_debile2.default, { key: debile.id, debile: debile, f: _this2.props.f });
 	                })
@@ -22563,7 +22594,6 @@
 	        value: function clicImg(id) {
 	            var sound = document.getElementById("audio" + id);
 	            sound.play();
-	            this.props.f(id);
 	        }
 	    }, {
 	        key: "render",
@@ -22785,32 +22815,72 @@
 /* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Score = function Score(_ref) {
+	    var good = _ref.good,
+	        bad = _ref.bad;
+	    return _react2.default.createElement(
+	        "div",
+	        { className: "score" },
+	        _react2.default.createElement(
+	            "span",
+	            { className: "good" },
+	            good,
+	            _react2.default.createElement("i", { className: "fa fa-fire" })
+	        ),
+	        _react2.default.createElement("span", { className: "separator" }),
+	        _react2.default.createElement(
+	            "span",
+	            { className: "bad" },
+	            _react2.default.createElement("img", { className: "tomb", src: "public/images/tomb.png" }),
+	            bad
+	        )
+	    );
+	};
+
+	exports.default = Score;
+
+/***/ }),
+/* 191 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
 	exports.__esModule = true;
 	exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
 
-	var _createStore = __webpack_require__(191);
+	var _createStore = __webpack_require__(192);
 
 	var _createStore2 = _interopRequireDefault(_createStore);
 
-	var _combineReducers = __webpack_require__(206);
+	var _combineReducers = __webpack_require__(207);
 
 	var _combineReducers2 = _interopRequireDefault(_combineReducers);
 
-	var _bindActionCreators = __webpack_require__(208);
+	var _bindActionCreators = __webpack_require__(209);
 
 	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
 
-	var _applyMiddleware = __webpack_require__(209);
+	var _applyMiddleware = __webpack_require__(210);
 
 	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
 
-	var _compose = __webpack_require__(210);
+	var _compose = __webpack_require__(211);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
-	var _warning = __webpack_require__(207);
+	var _warning = __webpack_require__(208);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -22834,7 +22904,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22843,11 +22913,11 @@
 	exports.ActionTypes = undefined;
 	exports['default'] = createStore;
 
-	var _isPlainObject = __webpack_require__(192);
+	var _isPlainObject = __webpack_require__(193);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _symbolObservable = __webpack_require__(202);
+	var _symbolObservable = __webpack_require__(203);
 
 	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 
@@ -23100,12 +23170,12 @@
 	}
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var baseGetTag = __webpack_require__(193),
-	    getPrototype = __webpack_require__(199),
-	    isObjectLike = __webpack_require__(201);
+	var baseGetTag = __webpack_require__(194),
+	    getPrototype = __webpack_require__(200),
+	    isObjectLike = __webpack_require__(202);
 
 	/** `Object#toString` result references. */
 	var objectTag = '[object Object]';
@@ -23168,12 +23238,12 @@
 
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var Symbol = __webpack_require__(194),
-	    getRawTag = __webpack_require__(197),
-	    objectToString = __webpack_require__(198);
+	var Symbol = __webpack_require__(195),
+	    getRawTag = __webpack_require__(198),
+	    objectToString = __webpack_require__(199);
 
 	/** `Object#toString` result references. */
 	var nullTag = '[object Null]',
@@ -23202,10 +23272,10 @@
 
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var root = __webpack_require__(195);
+	var root = __webpack_require__(196);
 
 	/** Built-in value references. */
 	var Symbol = root.Symbol;
@@ -23214,10 +23284,10 @@
 
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var freeGlobal = __webpack_require__(196);
+	var freeGlobal = __webpack_require__(197);
 
 	/** Detect free variable `self`. */
 	var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -23229,7 +23299,7 @@
 
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -23240,10 +23310,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var Symbol = __webpack_require__(194);
+	var Symbol = __webpack_require__(195);
 
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
@@ -23292,7 +23362,7 @@
 
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports) {
 
 	/** Used for built-in method references. */
@@ -23320,10 +23390,10 @@
 
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var overArg = __webpack_require__(200);
+	var overArg = __webpack_require__(201);
 
 	/** Built-in value references. */
 	var getPrototype = overArg(Object.getPrototypeOf, Object);
@@ -23332,7 +23402,7 @@
 
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports) {
 
 	/**
@@ -23353,7 +23423,7 @@
 
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports) {
 
 	/**
@@ -23388,14 +23458,14 @@
 
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(203);
+	module.exports = __webpack_require__(204);
 
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, module) {'use strict';
@@ -23404,7 +23474,7 @@
 	  value: true
 	});
 
-	var _ponyfill = __webpack_require__(205);
+	var _ponyfill = __webpack_require__(206);
 
 	var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -23427,10 +23497,10 @@
 
 	var result = (0, _ponyfill2['default'])(root);
 	exports['default'] = result;
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(204)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(205)(module)))
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports) {
 
 	module.exports = function(module) {
@@ -23446,7 +23516,7 @@
 
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -23474,7 +23544,7 @@
 	};
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -23482,13 +23552,13 @@
 	exports.__esModule = true;
 	exports['default'] = combineReducers;
 
-	var _createStore = __webpack_require__(191);
+	var _createStore = __webpack_require__(192);
 
-	var _isPlainObject = __webpack_require__(192);
+	var _isPlainObject = __webpack_require__(193);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _warning = __webpack_require__(207);
+	var _warning = __webpack_require__(208);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -23623,7 +23693,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -23653,7 +23723,7 @@
 	}
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -23709,7 +23779,7 @@
 	}
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23720,7 +23790,7 @@
 
 	exports['default'] = applyMiddleware;
 
-	var _compose = __webpack_require__(210);
+	var _compose = __webpack_require__(211);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
@@ -23772,7 +23842,7 @@
 	}
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -23813,7 +23883,7 @@
 	}
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports) {
 
 	'use strict';

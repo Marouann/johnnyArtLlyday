@@ -1,32 +1,32 @@
 import React from 'react'
 
 class Modale extends React.Component{
-    constructor(props){
+    constructor(props) {
         super(props);
     }
 
-    stopSon(id){
+    stopSon(id) {
         var sound = document.getElementById("audio"+id);
         sound.pause();
         sound.currentTime=0;
     }
 
-    render(){
-        function trouveRang(tab,id){
+    render() {
+        function trouveRang(tab,id) {
             var bool = true;
             var k=0;
-            while (bool && k<tab.length){
-                if (tab[k].id==id){
-                    bool=false
+            while (bool && k<tab.length) {
+                if (tab[k].id == id) {
+                    bool = false
                 }
-                else{
+                else {
                     k+=1;
                 }
             }
             return k
         }
 
-        return(
+        return (
             <div id="overlay">
                 <div className="popup_block">
                     <a className="close" href="#noWhere" onClick={() => this.stopSon(this.props.modaleId)}>X</a>
