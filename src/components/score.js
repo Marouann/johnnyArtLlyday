@@ -1,10 +1,12 @@
 import React from 'react';
+import Tomb from './tomb.js';
+import Fire from './Fire.js';
 
 const Score = ({ good, bad }) => (
     <div className="score">
-        <span className="good">{good}<i className="fa fa-fire" /></span>
+        <span className="good">{good}<Fire /></span>
         <span className="separator" />
-        <span className="bad"><img className="tomb" src="public/images/tomb.png"/>{bad}</span>
+        <span className="bad"><Tomb />{bad}</span>
     </div>
 );
 

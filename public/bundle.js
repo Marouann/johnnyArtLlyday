@@ -22231,6 +22231,14 @@
 
 	var _bdx2 = _interopRequireDefault(_bdx);
 
+	var _tomb = __webpack_require__(214);
+
+	var _tomb2 = _interopRequireDefault(_tomb);
+
+	var _fire = __webpack_require__(216);
+
+	var _fire2 = _interopRequireDefault(_fire);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22254,19 +22262,19 @@
 	            var rugbeux = [{
 	                id: 0, nom: "Rouveyrol", prenom: "Alexandre", surnom: "Elmer",
 	                image: "/public/images/johnny1.png",
-	                son: "/public/son/boula.wav",
+	                son: "/public/son/johnny1.wav",
 	                description: "Un éléphant tout bariolé de la tête au pied !",
 	                imageG: "/public/images/johnny1.png"
 	            }, {
 	                id: 1, nom: "Janot", prenom: "Alexandre", surnom: "René",
 	                image: "/public/images/johnny2.png",
-	                son: "/public/son/boula.wav",
+	                son: "/public/son/johnny2.wav",
 	                description: "René la taupe, qui creuse dans le sol",
 	                imageG: "/public/images/johnny2.png"
 	            }, {
 	                id: 2, nom: "Lamblin", prenom: "Théo", surnom: "Yoshi",
 	                image: "/public/images/johnny3.png",
-	                son: "/public/son/boula.wav",
+	                son: "/public/son/johnny3.wav",
 	                description: "Qui a du caca caki collé au cul-cul ?",
 	                imageG: "/public/images/johnny3.png"
 	            }, {
@@ -22279,48 +22287,48 @@
 
 	            var bda = [{
 	                src: "public/images/spqart.png",
-	                good: 50,
-	                bad: 0
+	                good: [50],
+	                bad: [0]
 	            }, {
 	                src: "public/images/moriarty.png",
-	                good: 0,
-	                bad: 0
+	                good: [0],
+	                bad: [0]
 	            }, {
 	                src: "public/images/teambarton.png",
-	                good: 0,
-	                bad: 0
+	                good: [0],
+	                bad: [0]
 	            }, {
 	                src: "public/images/gartdiens.png",
-	                good: 0,
-	                bad: 0
+	                good: [0],
+	                bad: [0]
 	            }];
 
 	            var bde = [{
 	                src: "public/images/belzebruth.jpg",
-	                good: 0,
-	                bad: 0
+	                good: [0],
+	                bad: [0]
 	            }, {
 	                src: "public/images/airfoxone.png",
-	                good: 0,
-	                bad: 0
+	                good: [0],
+	                bad: [0]
 	            }];
 
 	            var bds = [{
 	                src: "public/images/asporcalypse.png",
-	                good: 0,
-	                bad: 0
+	                good: [5],
+	                bad: [0]
 	            }, {
 	                src: "public/images/jacksporrow.png",
-	                good: 0,
-	                bad: 0
+	                good: [0],
+	                bad: [0]
 	            }, {
 	                src: "public/images/perecaspor.png",
-	                good: 0,
-	                bad: 0
+	                good: [10],
+	                bad: [50]
 	            }, {
 	                src: "public/images/sportroopers.svg",
-	                good: 0,
-	                bad: 0
+	                good: [10],
+	                bad: [0]
 	            }];
 
 	            return _react2.default.createElement(
@@ -22338,14 +22346,14 @@
 	                    'p',
 	                    null,
 	                    'Si vous r\xE9galez, vous gagnez des points ',
-	                    _react2.default.createElement('i', { className: 'fa fa-fire' }),
+	                    _react2.default.createElement(_fire2.default, null),
 	                    ' !'
 	                ),
 	                _react2.default.createElement(
 	                    'p',
 	                    null,
 	                    'Si vous chiez, vous enterrez un peu plus Johnny... ',
-	                    _react2.default.createElement('img', { className: 'tomb', src: 'public/images/tomb.png' })
+	                    _react2.default.createElement(_tomb2.default, null)
 	                ),
 	                _react2.default.createElement(_bdx2.default, { name: 'BDA', bdx: bda }),
 	                _react2.default.createElement(_bdx2.default, { name: 'BDE', bdx: bde }),
@@ -22365,8 +22373,31 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
+	                            '5 ',
+	                            _react2.default.createElement(_fire2.default, null),
+	                            ' pour les Aspos et la cr\xE8ve qu\'ils ont d\xFB choper dans les douves'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '10 ',
+	                            _react2.default.createElement(_fire2.default, null),
+	                            ' pour le film des Troopers et leur petite balade'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
 	                            '50 ',
-	                            _react2.default.createElement('i', { className: 'fa fa-fire' }),
+	                            _react2.default.createElement(_tomb2.default, null),
+	                            ' pour le film malaisant des Caspors mais 10 ',
+	                            _react2.default.createElement(_fire2.default, null),
+	                            ' pour l\'originalit\xE9 !!'
+	                        ),
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '50 ',
+	                            _react2.default.createElement(_fire2.default, null),
 	                            ' pour le discours de J\xE9sus SPQArt !'
 	                        )
 	                    )
@@ -22754,7 +22785,7 @@
 /* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -22764,25 +22795,33 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _tomb = __webpack_require__(214);
+
+	var _tomb2 = _interopRequireDefault(_tomb);
+
+	var _Fire = __webpack_require__(215);
+
+	var _Fire2 = _interopRequireDefault(_Fire);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Score = function Score(_ref) {
 	    var good = _ref.good,
 	        bad = _ref.bad;
 	    return _react2.default.createElement(
-	        "div",
-	        { className: "score" },
+	        'div',
+	        { className: 'score' },
 	        _react2.default.createElement(
-	            "span",
-	            { className: "good" },
+	            'span',
+	            { className: 'good' },
 	            good,
-	            _react2.default.createElement("i", { className: "fa fa-fire" })
+	            _react2.default.createElement(_Fire2.default, null)
 	        ),
-	        _react2.default.createElement("span", { className: "separator" }),
+	        _react2.default.createElement('span', { className: 'separator' }),
 	        _react2.default.createElement(
-	            "span",
-	            { className: "bad" },
-	            _react2.default.createElement("img", { className: "tomb", src: "public/images/tomb.png" }),
+	            'span',
+	            { className: 'bad' },
+	            _react2.default.createElement(_tomb2.default, null),
 	            bad
 	        )
 	    );
@@ -22810,6 +22849,12 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var sum = function sum(list) {
+	    return list.reduce(function (pv, pc) {
+	        return pv + pc;
+	    }, 0);
+	};
+
 	var Bdx = function Bdx(_ref) {
 	    var name = _ref.name,
 	        bdx = _ref.bdx;
@@ -22836,7 +22881,7 @@
 	                        'center',
 	                        null,
 	                        _react2.default.createElement('img', { className: "logo-bdx imgdeb" + index, src: src }),
-	                        _react2.default.createElement(_score2.default, { good: good, bad: bad })
+	                        _react2.default.createElement(_score2.default, { good: sum(good), bad: sum(bad) })
 	                    )
 	                );
 	            })
@@ -23899,6 +23944,72 @@
 	};
 
 	exports.default = modaleId;
+
+/***/ }),
+/* 214 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Tomb = function Tomb() {
+	  return _react2.default.createElement("img", { className: "tomb", src: "public/images/tomb.png" });
+	};
+
+	exports.default = Tomb;
+
+/***/ }),
+/* 215 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Fire = function Fire() {
+	  return _react2.default.createElement("i", { className: "fa fa-fire" });
+	};
+
+	exports.default = Fire;
+
+/***/ }),
+/* 216 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Fire = function Fire() {
+	  return _react2.default.createElement("i", { className: "fa fa-fire" });
+	};
+
+	exports.default = Fire;
 
 /***/ })
 /******/ ]);

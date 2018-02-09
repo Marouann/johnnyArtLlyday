@@ -104,6 +104,14 @@ img.tomb {
   margin-top: 30px;
 }
 
+.points i.fa.fa-fire {
+  font-size: 0.9em;
+}
+
+.points img.tomb {
+  height: 0.9em;
+}
+
 .separator {
   margin: 0 8px;
 }
