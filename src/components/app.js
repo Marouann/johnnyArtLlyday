@@ -112,7 +112,7 @@ class App extends React.Component {
                     <div className="bandeblanche" />
                     <h1>Derniers points marqués</h1>
                     <div>
-                        <p>50 <i className="fa fa-fire" /> pour le discours de Jésus SQPArt !</p>
+                        <p>50 <i className="fa fa-fire" /> pour le discours de Jésus SPQArt !</p>
                     </div>
                 </div>
             </div>

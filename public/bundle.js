@@ -22367,7 +22367,7 @@
 	                            null,
 	                            '50 ',
 	                            _react2.default.createElement('i', { className: 'fa fa-fire' }),
-	                            ' pour le discours de J\xE9sus SQPArt !'
+	                            ' pour le discours de J\xE9sus SPQArt !'
 	                        )
 	                    )
 	                )
