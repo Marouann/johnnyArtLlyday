@@ -68,8 +68,6 @@
 
 	var store = (0, _redux.createStore)(_reducer2.default);
 
-	console.log(store);
-	console.log(store.getState());
 	var render = function render() {
 	  return _reactDom2.default.render(_react2.default.createElement(_app2.default, { store: store }), document.getElementById('app'));
 	};
@@ -22281,7 +22279,7 @@
 
 	            var bda = [{
 	                src: "public/images/spqart.png",
-	                good: 0,
+	                good: 50,
 	                bad: 0
 	            }, {
 	                src: "public/images/moriarty.png",
@@ -22303,13 +22301,13 @@
 	                bad: 0
 	            }, {
 	                src: "public/images/airfoxone.png",
-	                good: 10,
+	                good: 0,
 	                bad: 0
 	            }];
 
 	            var bds = [{
 	                src: "public/images/asporcalypse.png",
-	                good: 10,
+	                good: 0,
 	                bad: 0
 	            }, {
 	                src: "public/images/jacksporrow.png",
@@ -22321,7 +22319,7 @@
 	                bad: 0
 	            }, {
 	                src: "public/images/sportroopers.svg",
-	                good: 10,
+	                good: 0,
 	                bad: 0
 	            }];
 
@@ -22351,7 +22349,28 @@
 	                ),
 	                _react2.default.createElement(_bdx2.default, { name: 'BDA', bdx: bda }),
 	                _react2.default.createElement(_bdx2.default, { name: 'BDE', bdx: bde }),
-	                _react2.default.createElement(_bdx2.default, { name: 'BDS', bdx: bds })
+	                _react2.default.createElement(_bdx2.default, { name: 'BDS', bdx: bds }),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'points' },
+	                    _react2.default.createElement('div', { className: 'bandeblanche' }),
+	                    _react2.default.createElement(
+	                        'h1',
+	                        null,
+	                        'Derniers points marqu\xE9s'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement(
+	                            'p',
+	                            null,
+	                            '50 ',
+	                            _react2.default.createElement('i', { className: 'fa fa-fire' }),
+	                            ' pour le discours de J\xE9sus SQPArt !'
+	                        )
+	                    )
+	                )
 	            );
 	        }
 	    }]);
@@ -22419,7 +22438,7 @@
 /* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -22457,13 +22476,13 @@
 	    }
 
 	    _createClass(Rugbeux, [{
-	        key: "render",
+	        key: 'render',
 	        value: function render() {
 	            var _this2 = this;
 
 	            return _react2.default.createElement(
-	                "div",
-	                { id: "listDebile", className: "row" },
+	                'div',
+	                { id: 'listDebile', className: 'row' },
 	                this.props.rugbeux.map(function (debile) {
 	                    return _react2.default.createElement(_debile2.default, { key: debile.id, debile: debile, f: _this2.props.f });
 	                })

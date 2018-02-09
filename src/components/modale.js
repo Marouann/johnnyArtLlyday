@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-class Modale extends React.Component{
+class Modale extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -12,7 +12,7 @@ class Modale extends React.Component{
     }
 
     render() {
-        function trouveRang(tab,id) {
+        function trouveRang(tab, id) {
             var bool = true;
             var k=0;
             while (bool && k<tab.length) {
@@ -45,4 +45,4 @@ class Modale extends React.Component{
     }
 }
 
-export default Modale
+export default Modale;

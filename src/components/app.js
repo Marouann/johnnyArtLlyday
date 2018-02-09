@@ -1,13 +1,13 @@
-import React from 'react'
-import Header from './header.js'
-import Rugbeux from './rugbeux.js'
-import Modale from './modale.js'
-import Bdx from './bdx.js'
+import React from 'react';
+import Header from './header.js';
+import Rugbeux from './rugbeux.js';
+import Modale from './modale.js';
+import Bdx from './bdx.js';
 
-class App extends React.Component{
+class App extends React.Component {
 
     render() {
-        var rugbeux = [
+        const rugbeux = [
                 {
                     id: 0, nom: "Rouveyrol", prenom: "Alexandre", surnom:"Elmer",
                     image:"/public/images/johnny1.png",
@@ -41,7 +41,7 @@ class App extends React.Component{
         const bda = [
             {
                 src: "public/images/spqart.png",
-                good: 0,
+                good: 50,
                 bad: 0,
             },
             {
@@ -69,7 +69,7 @@ class App extends React.Component{
             },
             {
                 src: "public/images/airfoxone.png",
-                good: 10,
+                good: 0,
                 bad: 0,
             },
         ];
@@ -77,7 +77,7 @@ class App extends React.Component{
         const bds = [
             {
                 src: "public/images/asporcalypse.png",
-                good: 10,
+                good: 0,
                 bad: 0,
             },
             {
@@ -92,7 +92,7 @@ class App extends React.Component{
             },
             {
                 src: "public/images/sportroopers.svg",
-                good: 10,
+                good: 0,
                 bad: 0,
             },
         ];
@@ -108,9 +108,16 @@ class App extends React.Component{
                 <Bdx name="BDA" bdx={bda} />
                 <Bdx name="BDE" bdx={bde} />
                 <Bdx name="BDS" bdx={bds} />
+                <div className="points">
+                    <div className="bandeblanche" />
+                    <h1>Derniers points marqués</h1>
+                    <div>
+                        <p>50 <i className="fa fa-fire" /> pour le discours de Jésus SQPArt !</p>
+                    </div>
+                </div>
             </div>
         )
     }
 }
 
-export default App
+export default App;

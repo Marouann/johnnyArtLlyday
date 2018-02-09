@@ -1,5 +1,5 @@
-import React from 'react'
-import Score from './score'
+import React from 'react';
+import Score from './score';
 
 const Bdx = ({ name, bdx }) => (
     <div className="bdx">
