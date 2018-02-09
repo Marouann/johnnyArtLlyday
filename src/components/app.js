@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './header.js'
 import Rugbeux from './rugbeux.js'
 import Modale from './modale.js'
-import Score from './Score.js'
+import Bdx from './bdx.js'
 
 class App extends React.Component{
 
@@ -105,49 +105,9 @@ class App extends React.Component{
                 <h1>Classement des plus formidables</h1>
                 <p>Si vous régalez, vous gagnez des points <i className="fa fa-fire" /> !</p>
                 <p>Si vous chiez, vous enterrez un peu plus Johnny... <img className="tomb" src="public/images/tomb.png"/></p>
-                <div className="bdx">
-                    <div className="bandeblanche little" />
-                    <h2>BDA</h2>
-                    <div className="row">
-                        {bda.map(({ src, good, bad }, index) => (
-                            <div className="col-md-3 debile mx-auto">
-                                {console.log(index)}
-                                <center>
-                                    <img className={"logo-bdx imgdeb"+index} src={src} />
-                                    <Score good={good} bad={bad} />
-                                </center>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <div className="bdx">
-                    <div className="bandeblanche little" />
-                    <h2>BDE</h2>
-                    <div className="row">
-                    {bde.map(({ src, good, bad }, index) => (
-                        <div className="col-md-3 debile mx-auto">
-                            <center>
-                                <img className={"logo-bdx imgdeb"+index} src={src} />
-                                <Score good={good} bad={bad} />
-                            </center>
-                        </div>
-                    ))}
-                    </div>
-                </div>
-                <div className="bdx">
-                    <div className="bandeblanche little" />
-                    <h2>BDS</h2>
-                    <div className="row">
-                        {bds.map(({ src, good, bad }, index) => (
-                            <div className="col-md-3 debile mx-auto">
-                                <center>
-                                    <img className={"logo-bdx imgdeb"+index} src={src} />
-                                    <Score good={good} bad={bad} />
-                                </center>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                <Bdx name="BDA" bdx={bda} />
+                <Bdx name="BDE" bdx={bde} />
+                <Bdx name="BDS" bdx={bds} />
             </div>
         )
     }

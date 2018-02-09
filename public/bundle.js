@@ -58,9 +58,9 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _redux = __webpack_require__(191);
+	var _redux = __webpack_require__(192);
 
-	var _reducer = __webpack_require__(212);
+	var _reducer = __webpack_require__(213);
 
 	var _reducer2 = _interopRequireDefault(_reducer);
 
@@ -22229,9 +22229,9 @@
 
 	var _modale2 = _interopRequireDefault(_modale);
 
-	var _Score = __webpack_require__(190);
+	var _bdx = __webpack_require__(191);
 
-	var _Score2 = _interopRequireDefault(_Score);
+	var _bdx2 = _interopRequireDefault(_bdx);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22349,94 +22349,9 @@
 	                    'Si vous chiez, vous enterrez un peu plus Johnny... ',
 	                    _react2.default.createElement('img', { className: 'tomb', src: 'public/images/tomb.png' })
 	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'bdx' },
-	                    _react2.default.createElement('div', { className: 'bandeblanche little' }),
-	                    _react2.default.createElement(
-	                        'h2',
-	                        null,
-	                        'BDA'
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'row' },
-	                        bda.map(function (_ref, index) {
-	                            var src = _ref.src,
-	                                good = _ref.good,
-	                                bad = _ref.bad;
-	                            return _react2.default.createElement(
-	                                'div',
-	                                { className: 'col-md-3 debile mx-auto' },
-	                                console.log(index),
-	                                _react2.default.createElement(
-	                                    'center',
-	                                    null,
-	                                    _react2.default.createElement('img', { className: "logo-bdx imgdeb" + index, src: src }),
-	                                    _react2.default.createElement(_Score2.default, { good: good, bad: bad })
-	                                )
-	                            );
-	                        })
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'bdx' },
-	                    _react2.default.createElement('div', { className: 'bandeblanche little' }),
-	                    _react2.default.createElement(
-	                        'h2',
-	                        null,
-	                        'BDE'
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'row' },
-	                        bde.map(function (_ref2, index) {
-	                            var src = _ref2.src,
-	                                good = _ref2.good,
-	                                bad = _ref2.bad;
-	                            return _react2.default.createElement(
-	                                'div',
-	                                { className: 'col-md-3 debile mx-auto' },
-	                                _react2.default.createElement(
-	                                    'center',
-	                                    null,
-	                                    _react2.default.createElement('img', { className: "logo-bdx imgdeb" + index, src: src }),
-	                                    _react2.default.createElement(_Score2.default, { good: good, bad: bad })
-	                                )
-	                            );
-	                        })
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'bdx' },
-	                    _react2.default.createElement('div', { className: 'bandeblanche little' }),
-	                    _react2.default.createElement(
-	                        'h2',
-	                        null,
-	                        'BDS'
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'row' },
-	                        bds.map(function (_ref3, index) {
-	                            var src = _ref3.src,
-	                                good = _ref3.good,
-	                                bad = _ref3.bad;
-	                            return _react2.default.createElement(
-	                                'div',
-	                                { className: 'col-md-3 debile mx-auto' },
-	                                _react2.default.createElement(
-	                                    'center',
-	                                    null,
-	                                    _react2.default.createElement('img', { className: "logo-bdx imgdeb" + index, src: src }),
-	                                    _react2.default.createElement(_Score2.default, { good: good, bad: bad })
-	                                )
-	                            );
-	                        })
-	                    )
-	                )
+	                _react2.default.createElement(_bdx2.default, { name: 'BDA', bdx: bda }),
+	                _react2.default.createElement(_bdx2.default, { name: 'BDE', bdx: bde }),
+	                _react2.default.createElement(_bdx2.default, { name: 'BDS', bdx: bds })
 	            );
 	        }
 	    }]);
@@ -22860,32 +22775,88 @@
 /* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _score = __webpack_require__(190);
+
+	var _score2 = _interopRequireDefault(_score);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Bdx = function Bdx(_ref) {
+	    var name = _ref.name,
+	        bdx = _ref.bdx;
+	    return _react2.default.createElement(
+	        'div',
+	        { className: 'bdx' },
+	        _react2.default.createElement('div', { className: 'bandeblanche little' }),
+	        _react2.default.createElement(
+	            'h2',
+	            null,
+	            name
+	        ),
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            bdx.map(function (_ref2, index) {
+	                var src = _ref2.src,
+	                    good = _ref2.good,
+	                    bad = _ref2.bad;
+	                return _react2.default.createElement(
+	                    'div',
+	                    { className: 'col-md-3 debile mx-auto' },
+	                    _react2.default.createElement(
+	                        'center',
+	                        null,
+	                        _react2.default.createElement('img', { className: "logo-bdx imgdeb" + index, src: src }),
+	                        _react2.default.createElement(_score2.default, { good: good, bad: bad })
+	                    )
+	                );
+	            })
+	        )
+	    );
+	};
+
+	exports.default = Bdx;
+
+/***/ }),
+/* 192 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
 	exports.__esModule = true;
 	exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
 
-	var _createStore = __webpack_require__(192);
+	var _createStore = __webpack_require__(193);
 
 	var _createStore2 = _interopRequireDefault(_createStore);
 
-	var _combineReducers = __webpack_require__(207);
+	var _combineReducers = __webpack_require__(208);
 
 	var _combineReducers2 = _interopRequireDefault(_combineReducers);
 
-	var _bindActionCreators = __webpack_require__(209);
+	var _bindActionCreators = __webpack_require__(210);
 
 	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
 
-	var _applyMiddleware = __webpack_require__(210);
+	var _applyMiddleware = __webpack_require__(211);
 
 	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
 
-	var _compose = __webpack_require__(211);
+	var _compose = __webpack_require__(212);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
-	var _warning = __webpack_require__(208);
+	var _warning = __webpack_require__(209);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -22909,7 +22880,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22918,11 +22889,11 @@
 	exports.ActionTypes = undefined;
 	exports['default'] = createStore;
 
-	var _isPlainObject = __webpack_require__(193);
+	var _isPlainObject = __webpack_require__(194);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _symbolObservable = __webpack_require__(203);
+	var _symbolObservable = __webpack_require__(204);
 
 	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 
@@ -23175,12 +23146,12 @@
 	}
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var baseGetTag = __webpack_require__(194),
-	    getPrototype = __webpack_require__(200),
-	    isObjectLike = __webpack_require__(202);
+	var baseGetTag = __webpack_require__(195),
+	    getPrototype = __webpack_require__(201),
+	    isObjectLike = __webpack_require__(203);
 
 	/** `Object#toString` result references. */
 	var objectTag = '[object Object]';
@@ -23243,12 +23214,12 @@
 
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var Symbol = __webpack_require__(195),
-	    getRawTag = __webpack_require__(198),
-	    objectToString = __webpack_require__(199);
+	var Symbol = __webpack_require__(196),
+	    getRawTag = __webpack_require__(199),
+	    objectToString = __webpack_require__(200);
 
 	/** `Object#toString` result references. */
 	var nullTag = '[object Null]',
@@ -23277,10 +23248,10 @@
 
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var root = __webpack_require__(196);
+	var root = __webpack_require__(197);
 
 	/** Built-in value references. */
 	var Symbol = root.Symbol;
@@ -23289,10 +23260,10 @@
 
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var freeGlobal = __webpack_require__(197);
+	var freeGlobal = __webpack_require__(198);
 
 	/** Detect free variable `self`. */
 	var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -23304,7 +23275,7 @@
 
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -23315,10 +23286,10 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var Symbol = __webpack_require__(195);
+	var Symbol = __webpack_require__(196);
 
 	/** Used for built-in method references. */
 	var objectProto = Object.prototype;
@@ -23367,7 +23338,7 @@
 
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports) {
 
 	/** Used for built-in method references. */
@@ -23395,10 +23366,10 @@
 
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var overArg = __webpack_require__(201);
+	var overArg = __webpack_require__(202);
 
 	/** Built-in value references. */
 	var getPrototype = overArg(Object.getPrototypeOf, Object);
@@ -23407,7 +23378,7 @@
 
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports) {
 
 	/**
@@ -23428,7 +23399,7 @@
 
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports) {
 
 	/**
@@ -23463,14 +23434,14 @@
 
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(204);
+	module.exports = __webpack_require__(205);
 
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, module) {'use strict';
@@ -23479,7 +23450,7 @@
 	  value: true
 	});
 
-	var _ponyfill = __webpack_require__(206);
+	var _ponyfill = __webpack_require__(207);
 
 	var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -23502,10 +23473,10 @@
 
 	var result = (0, _ponyfill2['default'])(root);
 	exports['default'] = result;
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(205)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(206)(module)))
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports) {
 
 	module.exports = function(module) {
@@ -23521,7 +23492,7 @@
 
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -23549,7 +23520,7 @@
 	};
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -23557,13 +23528,13 @@
 	exports.__esModule = true;
 	exports['default'] = combineReducers;
 
-	var _createStore = __webpack_require__(192);
+	var _createStore = __webpack_require__(193);
 
-	var _isPlainObject = __webpack_require__(193);
+	var _isPlainObject = __webpack_require__(194);
 
 	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _warning = __webpack_require__(208);
+	var _warning = __webpack_require__(209);
 
 	var _warning2 = _interopRequireDefault(_warning);
 
@@ -23698,7 +23669,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -23728,7 +23699,7 @@
 	}
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -23784,7 +23755,7 @@
 	}
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23795,7 +23766,7 @@
 
 	exports['default'] = applyMiddleware;
 
-	var _compose = __webpack_require__(211);
+	var _compose = __webpack_require__(212);
 
 	var _compose2 = _interopRequireDefault(_compose);
 
@@ -23847,7 +23818,7 @@
 	}
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -23888,7 +23859,7 @@
 	}
 
 /***/ }),
-/* 212 */
+/* 213 */
 /***/ (function(module, exports) {
 
 	'use strict';
